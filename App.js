@@ -2,8 +2,7 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import * as Font from 'expo-font';
-import AllUser2 from "./Src/AllUser2";
-import Detail from "./Src/Detail";
+import AllUser from "./Src/AllUser";
 import AddUser from "./Src/AddUser";
 import Edit from "./Src/Edit";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -19,13 +18,8 @@ const App = () => {
             screenOptions={{ headerShown: false }}
           >
             <Stack.Screen
-              name="AllUser2"
-              component={AllUser2}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
-              name="Detail"
-              component={Detail}
+              name="AllUser"
+              component={AllUser}
               options={{ headerShown: false }}
             />
              <Stack.Screen

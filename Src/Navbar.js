@@ -13,10 +13,12 @@ const Navbar = () => {
         <View style={[styles.homeParent]}>
           <View style={[styles.home1FlexBox]}>
 
-          <Pressable onPress={() => navigation.navigate("AllMuseum")}>
-            <FontAwesomeIcon icon={faUsers}               
-            style={[styles.iconLayout2,{marginLeft:10,color:"#74C0FC"}]}
-            size={25}/>
+          <Pressable onPress={() => navigation.navigate("AllUser")}>
+          <Image
+              style={[ styles.iconLayout2,{marginLeft:10}]}
+              contentFit="cover"
+              source={require("../assets/user-plus-01.png")}
+            />
             <Text style={[styles.doctorsFlexBox]}>
               เพิ่มผู้ใช้งาน
             </Text>
@@ -25,7 +27,7 @@ const Navbar = () => {
 
           
           <View style={[ styles.home1FlexBox]}>
-          <Pressable onPress={() => navigation.navigate("AllUser2")}>
+          <Pressable onPress={() => navigation.navigate("AllUser")}>
             <Image
               style={[ styles.iconLayout2,{marginLeft:5}]}
               contentFit="cover"
@@ -95,7 +97,6 @@ const styles = StyleSheet.create({
         textAlign: "center",
         lineHeight: 14,
         fontSize: FontSize.overlineXSmallBold10_size,
-        fontFamily: FontFamily.buttonMRegular,
         justifyContent: "center",
         alignItems: "center",
       }
